@@ -13,14 +13,14 @@ VOICES = {
     "عربي": {
         
         " زارية (امرأة - السعودية)": "ar-SA-ZariyahNeural",
-        " جمال (رجل - مصر)":         "ar-EG-ShakirNeural",
+        " شاكر (رجل - مصر)":         "ar-EG-ShakirNeural",
         " سلمى (امرأة - مصر)":       "ar-EG-SalmaNeural",
     },
     "إنجليزي": {
         " غاي (رجل - أمريكا)":       "en-US-GuyNeural",
         " جيني (امرأة - أمريكا)":    "en-US-JennyNeural",
         " رايان (رجل - بريطانيا)":   "en-GB-RyanNeural",
-        " ليبرا (امرأة - بريطانيا)": "en-GB-LibbyNeural",
+        " ليبي (امرأة - بريطانيا)": "en-GB-LibbyNeural",
     },
 }
  
