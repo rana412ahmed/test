@@ -26,18 +26,3 @@ VOICES = {
  
 voice_label = st.selectbox("اختار الصوت:", list(VOICES[lang].keys()))
 voice_id = VOICES[lang][voice_label]
- 
-async def generate_audio(text, voice):
-    communicate = edge_tts.Communicate(text=text, voice=voice)
-    audio_chunks = []
-    async for chunk in communicate.stream():
-        if chunk["type"] == "audio":
-            audio_chunks.append(chunk["data"])
-    return b"".join(audio_chunks)
- 
-if st.button("تشغيل الصوت"):
-    if text:
-        audio_bytes = asyncio.run(generate_audio(text, voice_id))
-        st.audio(audio_bytes, format="audio/mp3")
-    else:
-        st.warning("اكتب نص أولاً! ")
